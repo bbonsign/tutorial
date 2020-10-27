@@ -2,10 +2,11 @@ import React from 'react';
 import Square from './Square';
 
 
-function Board({squares, updateSquares, status, setStatus}) {
+function Board({history, updateSquares, status, setStatus, stepNumber}) {
   const rows = [0, 3, 6];
 
   function renderSquare(i) {
+    const squares = history[stepNumber].squares;
     return <Square
       value={squares[i]}
       onClick={() => {
@@ -27,7 +28,7 @@ function Board({squares, updateSquares, status, setStatus}) {
     );
   }
 
-  const winner = determineWinner(squares);
+  const winner = determineWinner(history[stepNumber].squares);
   let message;
   if (winner) {
     message = "Winner: " + winner;
