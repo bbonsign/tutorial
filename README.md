@@ -1,3 +1,9 @@
+# React Tutorial
+
+Tic-tac-toe game from the [react tutorial](https://reactjs.org/tutorial/tutorial.html).
+Followed the steps pretty closely, reading through them, but implementing them from memory.
+Used function compoenents with hooks instead of the class-based components in the tutorial.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
